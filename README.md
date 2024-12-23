@@ -25,7 +25,7 @@ Este repositorio está diseñado para documentar y compartir ejercicios y proyec
 
 1. [🚀 Ejercicios](#ejercicios)
    - 🌦️ [01. Predicción del Clima](01_Weather_Prediction/)
-   - 🌀 [02. Clustering con K-means](02_KMeans_Clustering/)
+   - 🌀 [02. Clustering con K-means Postulantes UNI](02_KMeans_Postulantes_UNI/)
    - Próximos ejercicios en camino... 🚧
 2. [🛠 Proyectos](#proyectos)
    - 🚀 Proyectos avanzados próximamente.
