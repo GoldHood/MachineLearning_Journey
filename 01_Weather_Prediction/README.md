@@ -5,6 +5,8 @@
   <strong>Un estudio integral para predecir el clima utilizando técnicas de Machine Learning.</strong>
 </p>
 
+![image](https://github.com/user-attachments/assets/67438988-6385-45b7-8af5-38990fefa19d)
+
 ---
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -210,6 +212,16 @@ print(df.shape)
 ```
 - **Explicación:** Los outliers fueron identificados usando el rango intercuartílico (IQR) y eliminados. Esto asegura que las métricas del modelo no se vean influenciadas por valores extremos.
 
+### Data antes del tratamiento de Outliers
+
+![image](https://github.com/user-attachments/assets/e37c7967-4922-4ba5-b2c9-f0e91851c350)
+
+
+### Data después del tratamiento de Outliers
+
+![image](https://github.com/user-attachments/assets/924005ac-0547-4230-8da7-8ef82b9279c1)
+
+
 ---
 
 ### Definición de Variable Objetivo y Características
@@ -234,6 +246,9 @@ sns.heatmap(df.corr(), annot=True, fmt='.2f', cmap='coolwarm')
 plt.title("Matriz de Correlación de Variables")
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/3e76e715-c8b5-4689-bb1d-b6ef75a7714e)
+
+
 - **Observaciones:**
   - `maxC`, `minC` y `rocioC` tienen alta correlación positiva (>0.9).
   - `nubosidad_por` está negativamente correlacionada con `maxC` (~-0.58).
@@ -358,6 +373,9 @@ for feature, importance in zip(features, importances):
 | `maxC`            | 0.15        |
 | `minC`            | 0.12        |
 | `radiac_solar_watios_m2` | 0.10 |
+
+![image](https://github.com/user-attachments/assets/12ebdde0-c8ea-4586-88a7-507a63341ced)
+
 
 - **Interpretación:**
   - `clase_hoy` es el predictor más relevante, lo cual tiene sentido porque el clima de hoy guarda una continuidad con el clima de mañana.
